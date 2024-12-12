@@ -1,0 +1,23 @@
+.filter-panel {
+  background-color: white;
+}
+
+.filter-item {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.filter-item.selected {
+  background-color: #0f548c;
+  color: white;
+}

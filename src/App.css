@@ -18,7 +18,18 @@
   margin-bottom: 5px;
 }
 
-.container {
+.main-container {
   background-color: #f0f0f0;
-  padding: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+.filter-panel {
+  flex: 1;
+}
+
+.main-container {
+  flex: 2;
 }

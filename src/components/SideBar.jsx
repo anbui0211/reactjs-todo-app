@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 import "./SideBar.css";
+
 const SideBar = (props) => {
   const data = props.todoItem;
   const [name, setName] = useState(data.name);
@@ -56,7 +58,7 @@ const SideBar = (props) => {
       <div className="sb-footer">
         <button onClick={handleSave}>Save</button>
         <button
-          onAbort={() => {
+          onClick={() => {
             props.setShowSidebar(false);
           }}
         >
@@ -65,6 +67,16 @@ const SideBar = (props) => {
       </div>
     </div>
   );
+};
+
+SideBar.propTypes = {
+  setShowSidebar: PropTypes.func,
+  handleTodoItemChange: PropTypes.func,
+  todoItem: {
+    name: PropTypes.string,
+    isImportant: PropTypes.bool,
+    isCompleted: PropTypes.bool,
+  },
 };
 
 export default SideBar;
