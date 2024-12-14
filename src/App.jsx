@@ -12,6 +12,7 @@ function App() {
       isImportant: true,
       isCompleted: true,
       isDeleted: false,
+      category: "personal",
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ function App() {
       isImportant: false,
       isCompleted: false,
       isDeleted: true,
+      category: "personal",
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ function App() {
       isImportant: true,
       isCompleted: false,
       isDeleted: false,
+      category: "travel",
     },
   ]);
 
@@ -115,6 +118,7 @@ function App() {
                   isCompleted: false,
                   isImportant: false,
                   isDelete: false,
+                  category: "personal",
                 },
               ]);
               // Xóa giá trị của thẻ input
